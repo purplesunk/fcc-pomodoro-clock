@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <script src="js/main.js" async></script>
+  <link rel="stylesheet" href="css/style.css" media="all">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
+
+  <title>25 + 5 Clock</title>
+
+</head>
+<body>
+  <h1 id="title">25 + 5 Clock</h1>
+  <div class="time-selectors">
+     <div class="selector break">
+       <div id="break-label" class="label">Break Length</div>
+       <button id="break-decrement" class="btn decrement break"><i class="material-icons-round">expand_more</i></button>
+       <p id="break-length" class="lengths">5</p>
+       <button id="break-increment" class="btn increment break"><i class="material-icons-round">expand_less</i></button>
+     </div>
+
+     <div class="selector session">
+       <div id="session-label" class="label">Session Length</div>
+         <button id="session-decrement" class="btn decrement session"><i class="material-icons-round">expand_more</i></button>
+         <p id="session-length" class="lengths">25</p>
+         <button id="session-increment" class="btn increment session"><i class="material-icons-round">expand_less</i></button>
+     </div>
+  </div>
+  <div class="timer">
+    <div class="timer-display">
+      <p id="timer-label">Session</p>
+      <h3 id="time-left">25:00</h3>
+    </div>
+    <div class="timer-control">
+      <button id="start_stop" class="btn"><i class="material-icons-round">play_arrow</i></button>
+      <button id="reset" class="btn"><i class="material-icons-round">replay</i></button>
+      <audio id="beep" src="audio/bellsound.m4a"></audio>
+    </div>
+  </div>
+ 
+</body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
